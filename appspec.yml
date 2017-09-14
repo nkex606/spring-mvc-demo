@@ -1,0 +1,20 @@
+version: 0.0
+os: linux
+files:
+  - source: /target/spring-mvc-demo-0.0.1-SNAPSHOT.war
+    destination: /var/lib/tomcat7/webapps/
+  - source: /scripts/*.sh
+    destination: /home/ubuntu/
+hooks:
+  BeforeInstall:
+    - location:/home/ubuntu/tomcat_stop.sh
+      timeout: 300
+      runas: root
+#  AfterInstall:
+#    - location: afterinstall.sh
+#      timeout: 300
+#      runas: root
+  ApplicationStart:
+    - location: /home/ubuntutomcat_start.sh
+      timeout: 300
+      runas: root
