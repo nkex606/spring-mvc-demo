@@ -1,4 +1,4 @@
-version: 0.2
+on: 0.2
 
 phases:
   build:
@@ -11,5 +11,6 @@ phases:
       - mvn package
 artifacts:
   files:
-    - target/spring-mvc-demo-app.war
+    - target/my-app-1.0-SNAPSHOT.war
+    - appspec.yml
   discard-paths: yes
