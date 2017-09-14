@@ -18,7 +18,7 @@ public class WelcomeController {
 	@RequestMapping(value = "/")
 	public String doWelcome(Model model) {
 //		WelcomeService welcomeService = new WelcomeService();
-		List<String> welcomeMessage = welcomeService.getWelcomeMessage("Elsa");
+		List<String> welcomeMessage = welcomeService.getWelcomeMessage("Elsa Huang");
 
 		model.addAttribute("myWelcomeMessage", welcomeMessage);
 
