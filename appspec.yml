@@ -3,7 +3,7 @@ os: linux
 files:
   - source: /target/spring-mvc-demo-0.0.1-SNAPSHOT.war
     destination: /var/lib/tomcat7/webapps/
-  - source: /scripts/*.sh
+  - source: /scripts/*
     destination: /home/ubuntu/
 hooks:
   BeforeInstall:
