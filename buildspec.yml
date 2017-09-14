@@ -4,11 +4,13 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - mvn test
+      - mvn test 
   post_build:
     commands:
       - echo Build completed on `date`
       - mvn package
 artifacts:
   files:
-    - target/spring-mvc-demo.war
+    - target/spring-mvc-demo-app.war
+    - appspec.yml
+  discard-paths: yes

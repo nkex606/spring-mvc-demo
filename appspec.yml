@@ -1,0 +1,5 @@
+on: 0.0
+os: linux
+files:
+  - source: ./spring-mvc-demo-app.war
+    destination: /tmp
