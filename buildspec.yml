@@ -8,4 +8,3 @@ phases:
 artifacts:
   files:
     - target/spring-mvc-demo.war
-  discard-paths: yes
