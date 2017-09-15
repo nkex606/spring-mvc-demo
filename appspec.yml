@@ -1,13 +1,13 @@
 version: 0.0
 os: linux
 files:
-  - source: /target/spring-mvc-demo-0.0.1-SNAPSHOT.war
+  - source: spring-mvc-demo-0.0.1-SNAPSHOT.war
     destination: /var/lib/tomcat7/webapps/
-  - source: /scripts
+  - source: scripts
     destination: /tmp
 hooks:
   BeforeInstall:
-    - location: scripts/tomcat_stop.sh
+    - location: tomcat_stop.sh
       timeout: 300
       runas: root
 #  AfterInstall:
@@ -15,6 +15,6 @@ hooks:
 #      timeout: 300
 #      runas: root
   ApplicationStart:
-    - location: scripts/tomcat_start.sh
+    - location: tomcat_start.sh
       timeout: 300
       runas: root
