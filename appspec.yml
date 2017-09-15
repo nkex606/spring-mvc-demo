@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /target/spring-mvc-demo-0.0.1-SNAPSHOT.war
+  - source: /spring-mvc-demo-0.0.1-SNAPSHOT.war
     destination: /var/lib/tomcat7/webapps/
 hooks:
   BeforeInstall:
