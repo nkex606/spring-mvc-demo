@@ -3,8 +3,8 @@ os: linux
 files:
   - source: spring-mvc-demo-0.0.1-SNAPSHOT.war
     destination: /var/lib/tomcat7/webapps/
-  - source: scripts
-    destination: /tmp
+#  - source: scripts
+#    destination: /tmp
 hooks:
   BeforeInstall:
     - location: tomcat_stop.sh
