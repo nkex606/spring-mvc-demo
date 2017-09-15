@@ -7,7 +7,7 @@ files:
     destination: /home/ubuntu/
 hooks:
   BeforeInstall:
-    - location: scripts/tomcat_stop.sh
+    - location: tomcat_stop.sh
       timeout: 300
       runas: root
 #  AfterInstall:
@@ -15,6 +15,6 @@ hooks:
 #      timeout: 300
 #      runas: root
   ApplicationStart:
-    - location: scripts/tomcat_start.sh
+    - location: tomcat_start.sh
       timeout: 300
       runas: root
