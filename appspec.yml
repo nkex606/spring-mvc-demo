@@ -5,7 +5,7 @@ files:
     destination: /var/lib/tomcat7/webapps/
 hooks:
   BeforeInstall:
-    - location:scripts/tomcat_stop.sh
+    - location: scripts/tomcat_stop.sh
       timeout: 300
       runas: root
 #  AfterInstall:
