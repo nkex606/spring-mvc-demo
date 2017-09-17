@@ -9,10 +9,11 @@
 <title>Welcome</title>
 </head>
 <body>
+
 	<c:forEach var="messageItem" items="${myWelcomeMessage}">
 		<c:out value="${messageItem}">
 		</c:out>
 	</c:forEach>
-	
+	<hr>
 </body>
 </html>
