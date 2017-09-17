@@ -9,11 +9,14 @@
 <title>Welcome</title>
 </head>
 <body>
-
-	<c:forEach var="messageItem" items="${myWelcomeMessage}">
-		<c:out value="${messageItem}">
-		</c:out>
-	</c:forEach>
-	<hr>
+	<div style="text-align:center">
+		<h2 style="color:#DF0101">
+			<c:forEach var="messageItem" items="${myWelcomeMessage}">
+				<c:out value="${messageItem}">
+				</c:out>
+			</c:forEach>
+		</h2>
+	</div>
+	
 </body>
 </html>
