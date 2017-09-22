@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div style="text-align:center">
-		<h2 style="color: blue">
+		<h2 style="color: green">
 			<c:forEach var="messageItem" items="${myWelcomeMessage}">
 				<c:out value="${messageItem}">
 				</c:out>
